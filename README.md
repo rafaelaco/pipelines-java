@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/cloud-migration-0001/cloudmigration001/_apis/build/status/rafaelaco.pipelines-java?branchName=master)](https://dev.azure.com/cloud-migration-0001/cloudmigration001/_build/latest?definitionId=2&branchName=master)
 
 # Contributing
 
