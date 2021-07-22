@@ -41,11 +41,11 @@ stages:
             onTimeout: 'resume'
         
       - job: PublishCoverage
-      displayName: Publish Coverage Code
-      steps:
-      - task: PublishCodeCoverageResults@1
-        inputs:
-          codeCoverageTool: "JaCoCo"
-          summaryFileLocation: "$(System.DefaultWorkingDirectory)/**/site/jacoco/jacoco.xml"
-          reportDirectory: "$(System.DefaultWorkingDirectory)/**/site/jacoco"
-          failIfCoverageEmpty: true
+        displayName: Publish Coverage Code
+        steps:
+        - task: PublishCodeCoverageResults@1
+          inputs:
+            codeCoverageTool: "JaCoCo"
+            summaryFileLocation: "$(System.DefaultWorkingDirectory)/**/site/jacoco/jacoco.xml"
+            reportDirectory: "$(System.DefaultWorkingDirectory)/**/site/jacoco"
+            failIfCoverageEmpty: true
